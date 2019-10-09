@@ -1,0 +1,225 @@
+:root {
+    --font-accent: 'Turret Road', cursive;
+    --font-header: 'Merriweather', serif;
+    --font-primary: 'Playfair Display', serif;
+    --bg-color-light: #eeeeee;
+    --bg-color: #e5e5e5;
+    --font-color: #23374d;
+    --heading-color: #1089ff;
+    --hover-color: #96c7fc;
+    --header-img: url('https://wallpaperplay.com/walls/full/7/a/3/210599.jpg');
+    --header-font-color: rgba(255, 255, 255, .85);
+    --form-gradient: linear-gradient(90deg, black, #23374d);
+}
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    background: var(--bg-color-light);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--form-gradient);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-align: right;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 0px;
+    font-family: var(--font-accent);
+    font-size: 1.1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--heading-color);
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: var(--hover-color);
+}
+
+header {
+    color: var(--header-font-color);
+    background: var(--header-img), var(--form-gradient);
+    background-repeat: no-repeat;
+    background-size: 100vw 56.25vw;
+    height: 56.25vw;
+    max-height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 15px 2px var(--font-color);
+    line-height: 1.5;
+}
+
+header h1 {
+    font-family: var(--font-header);
+    font-size: 3.5rem;
+}
+
+header h3 {
+    font-family: var(--font-accent);
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+
+main section {
+    margin: 0 12.5vw;
+}
+
+.section-head {
+    text-align: center;
+    font-size: 2.25rem;
+    color: var(--font-color);
+    font-family: var(--font-header);
+    padding-bottom: 5px;
+    margin: 50px 12.5vw 40px 12.5vw;
+    border-bottom: 2px solid var(--font-color);
+}
+
+.skill-container {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px dotted var(--font-color);
+    overflow: auto;
+}
+
+.skill-container h5 {
+    font-family: var(--font-header);
+    font-size: 1.1rem;
+    color: var(--heading-color);
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.skill-container p {
+    font-family: var(--font-primary);
+    font-size: .95rem;
+    font-weight: normal;
+}
+
+.skill-left img {
+    float: left;
+    margin-right: 15px;
+}
+
+.skill-right img {
+    float: right;
+    margin-left: 15px;
+}
+
+.hobbies-root {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    column-count: 4;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.hobby-container {
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 17.5vw;
+    min-width: 138px;
+    max-width: 100%;
+}
+
+.hobby-container img {
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.hobby-container h5 {
+    font-size: 1.125rem;
+    text-align: center;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--heading-color);
+    font-family: var(--font-header);
+    color: var(--heading-color);
+    font-weight: 500;
+}
+
+.hobby-container p {
+    color: var(--font-color);
+    font-family: var(--font-primary);
+    font-size: .875rem;
+}
+
+.contact-container {
+    background: var(--form-gradient);
+    margin: 0;
+    padding: 0px 12.5vw;
+    box-shadow: 0 0 15px 5px var(--font-color);
+}
+
+#contactme {
+    color: var(--header-font-color);
+    border-bottom: 2px solid var(--header-font-color);
+    padding-top: 30px;
+    margin: 0 0 20px 0;
+}
+
+.contact-img-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.contact-img-container a {
+    transition: all .25s ease;
+    margin-right: 16px;
+}
+
+.contact-img-container a:hover {
+    transform: scale(1.25);
+}
+
+.contact-img-container img {
+    height: 64px;
+    width: 64px;
+}
+
+footer {
+    background: var(--form-gradient);
+}
+
+footer p {
+    color: var(--header-font-color);
+    text-align: center;
+    padding: 20px 0 15px 0;
+    font-size: .7rem;
+}
+
+@media screen and (max-width: 600px) 
+{
+    header h1 {
+        font-size: 10vw;
+    }
+}
+
+nav {
+    display: none;
+}
